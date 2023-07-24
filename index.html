@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link href="styles.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="dob">
+        <div class="input">
+          <p class="reg" id="regday">DAY</p>
+          <input
+            id="day"
+            type="number"
+            min="1"
+            max="31"
+            placeholder="DD"
+            value=""
+          />
+          <p id="req1" class="req"></p>
+        </div>
+        <div class="input">
+          <p class="reg" id="regmonth">MONTH</p>
+          <input
+            id="month"
+            type="number"
+            min="1"
+            max="12"
+            placeholder="MM"
+            value=""
+          />
+          <p id="req2" class="req"></p>
+        </div>
+        <div class="input">
+          <p class="reg" id="regyear">YEAR</p>
+          <input id="year" type="number" min="1" placeholder="YYYY" value="" />
+          <p id="req3" class="req"></p>
+        </div>
+      </article>
+      <button id="button">
+        <img src="assets/images/icon-arrow.svg" alt="calculate age" />
+      </button>
+      <article class="age">
+        <div class="result">
+          <p id="years" class="xpurple">--</p>
+          <p class="xbold" id="yearsBold">years</p>
+        </div>
+        <div class="result">
+          <p id="months" class="xpurple">--</p>
+          <p class="xbold" id="monthsBold">months</p>
+        </div>
+        <div class="result">
+          <p id="days" class="xpurple">--</p>
+          <p class="xbold" id="daysBold">days</p>
+        </div>
+      </article>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Feng Boris</a>.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
