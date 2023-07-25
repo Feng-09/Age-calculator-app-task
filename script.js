@@ -192,3 +192,11 @@ yearInput.addEventListener("focus", () => {
 monthInput.addEventListener("change", () => {
   monthInput.value = String(monthInput.value).padStart(2, "0");
 });
+
+dayInput.addEventListener("change", () => {
+  dayInput.value = String(dayInput.value).padStart(2, "0");
+});
+
+yearInput.addEventListener("change", () => {
+  yearInput.value = String(yearInput.value).padStart(4, "0");
+});
